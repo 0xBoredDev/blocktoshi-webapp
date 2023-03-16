@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    max-width: 100vw;
+    overflow: hidden;
+    font-family: "Satoshi-Variable";
+    background-color: #efedeb;
+  }
+}
+
+/* swiper */
+.design-card {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide-active .design-card img {
+  -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0);
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 18em !important;
+  margin-bottom: 30px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  background: gray !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: white !important;
+}
+
+.ord-info {
+  display: flex;
+  justify-content: center;
+}
+
+.ord-title {
+  font-size: 1.3em;
+  color: #000000;
+  font-family: "IntegralCF-Regular";
+  font-weight: 400;
+  letter-spacing: 0.2vw;
+  text-align: center;
+}
+
+.ord-name1 {
+  color: #000000;
+  font-family: "IntegralCF-Bold";
+  font-size: 1.5em;
+  font-weight: 900;
+  margin: 0 !important;
+}
+
+.ord-name2 {
+  color: #000000;
+  font-family: "IntegralCF-Regular";
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0 !important;
+}
+
+.ord-icon {
+  color: #000000;
+  font-size: 1.2vw;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.ord-icon:hover {
+  color: #000000;
+  scale: 1.3 !important;
+}
+
+@media screen and (max-width: 575.98px) {
+  .swiper-slide {
+    width: 12em !important;
+    margin-bottom: 30px;
+  }
+}
