@@ -26,6 +26,11 @@ const Landing: NextPage = (props) => {
         <meta property="og:image" content={og_img.src} key="image" />
         <meta property="og:image:width" content="1200" key="imagewidth" />
         <meta property="og:image:height" content="630" key="imageheight" />
+        <meta
+          property="og:url"
+          content="https://blocktoshi-ordinals.vercel.app/"
+          key="url"
+        />
       </Head>
       <main className="w-screen h-screen relative overflow-hidden">
         <div className="w-full h-full flex flex-col items-center mt-2 bg-nuetral">
