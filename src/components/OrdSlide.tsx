@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import { FC } from "react";
 import { Ord } from "../models/ord";
 import ord_logo from "../assets/ordinal_logo.png";
+import Image from "next/image";
 
 interface OrdProps {
   ordData: Ord[];
@@ -14,11 +15,16 @@ interface OrdProps {
 
 export const OrdSlide: FC<OrdProps> = ({ ordData }) => {
   let i = 0;
-  //   console.log(data);
   let slides = ordData.map((o) => (
     <SwiperSlide key={i++}>
       <div className="design-card">
-        <img src={o.img} className="img-fluid o-img" alt="img" />
+        <Image
+          src={o.img}
+          width={500}
+          height={500}
+          className="img-fluid o-img"
+          alt="img"
+        />
         <div className="ord-info">
           <p className="ord-name1">{o.inscription}</p>
           <div className="vr ord-name2">&nbsp;|&nbsp;</div>
@@ -32,7 +38,9 @@ export const OrdSlide: FC<OrdProps> = ({ ordData }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <img
+            <Image
+              width={200}
+              height={200}
               src={ord_logo.src}
               alt="ord logo"
               className="text-xs h-8 w-8"

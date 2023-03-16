@@ -1,7 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import logo from "../assets/logo.svg";
 import { FaTwitter, FaDiscord } from "react-icons/fa";
 import OrdSlide from "../components/OrdSlide";
 import data from "../data/ord.json";
@@ -12,19 +10,22 @@ const Landing: NextPage = (props) => {
     <>
       <Head>
         <meta name="twitter:card" content="summary_large_image" key="card" />
-        <meta name="twitter:site" content="@snounsdao" key="site" />
-        <meta property="og:site_name" content="n00uns" key="sitename" />
-        <meta property="og:title" content="n00uns soon" key="title" />
+        <meta name="twitter:site" content="@blocktoshiords" key="site" />
+        <meta
+          property="og:site_name"
+          content="Blocktoshi Ordinals"
+          key="sitename"
+        />
+        <meta property="og:title" content="Blocktoshi Ordinals" key="title" />
         <meta
           property="og:description"
-          content="n00unsDAO is an ambitious multi-chain DAO and community proliferating via the @nounsdao protocol and @y00tsNFT"
+          content="1/1 pixel collection created by @pencilx and inscribed on the bitcoin blockchain by @thedevkev_"
           key="description"
         />
         <meta property="og:type" content="website" key="type" />
         <meta property="og:image" content={og_img.src} key="image" />
         <meta property="og:image:width" content="1200" key="imagewidth" />
         <meta property="og:image:height" content="630" key="imageheight" />
-        <meta property="og:url" content="https://www.n00uns.com" key="url" />
       </Head>
       <main className="w-screen h-screen relative overflow-hidden">
         <div className="w-full h-full flex flex-col items-center mt-2 bg-nuetral">
@@ -42,7 +43,7 @@ const Landing: NextPage = (props) => {
           </span>
           <div className="flex flex-col items-center absolute bottom-5 sm:bottom-20 p-5 mb-10 sm:mb-0">
             <p className="text-xl sm:text-4xl pb-2 font-light font-['Satoshi_Regular'] text-center">
-              "A 1/1 pixel collection created by{" "}
+              &quot;A 1/1 pixel collection created by{" "}
               <a
                 className="hover:underline"
                 href="https://twitter.com/pencilxart"
@@ -60,7 +61,7 @@ const Landing: NextPage = (props) => {
               >
                 thedevkev_
               </a>{" "}
-              "
+              &quot;
             </p>
           </div>
         </div>
