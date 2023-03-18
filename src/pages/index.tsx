@@ -43,32 +43,33 @@ const Landing: NextPage = (props) => {
             <OrdSlide ordData={data} />
           </div>
 
-          <span className="mt-2 mb-12 text-xl sm:mb-12 font-['Satoshi_Regular']">
-            On Sale Soon
+          <span className="mt-2 mb-2 text-3xl sm:mb-12 font-['Satoshi_Regular']">
+            Buy now{" "}
+            <a href="https://blocktoshi.ordhub.io/" className="underline">
+              blocktoshi.ordhub.io
+            </a>
           </span>
-          <div className="flex flex-col items-center absolute bottom-5 sm:bottom-20 p-5 mb-10 sm:mb-0">
-            <p className="text-xl sm:text-4xl pb-2 font-light font-['Satoshi_Regular'] text-center">
-              &quot;A 1/1 pixel collection created by{" "}
-              <a
-                className="hover:underline"
-                href="https://twitter.com/pencilxart"
-                target="_blank"
-                rel="noreferrer"
-              >
-                pencilx
-              </a>{" "}
-              and inscribed on the bitcoin blockchain by{" "}
-              <a
-                className="hover:underline"
-                href="https://twitter.com/thedevkev_"
-                target="_blank"
-                rel="noreferrer"
-              >
-                thedevkev_
-              </a>{" "}
-              &quot;
-            </p>
-          </div>
+          <p className="text-xl sm:text-4xl pb-2 font-light font-['Satoshi_Regular'] text-center">
+            &quot;A 1/1 pixel collection created by{" "}
+            <a
+              className="hover:underline"
+              href="https://twitter.com/pencilxart"
+              target="_blank"
+              rel="noreferrer"
+            >
+              pencilx
+            </a>{" "}
+            and inscribed on the bitcoin blockchain by{" "}
+            <a
+              className="hover:underline"
+              href="https://twitter.com/thedevkev_"
+              target="_blank"
+              rel="noreferrer"
+            >
+              thedevkev_
+            </a>{" "}
+            &quot;
+          </p>
         </div>
         <footer className="fixed h-20 bg-white bottom-0 w-full items-center justify-between">
           <ul className="flex items-center justify-center mx-auto text-black space-x-8 content-center p-6">
